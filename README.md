@@ -1,4 +1,4 @@
-# Lab 7: Pipes
+# Lab 6: Pipes
 
 One of the core types of IPC on Unix system is pipes. You will be implementing pipe redirection in your shell, and of course there's that [awesome video](https://www.cs.usfca.edu/~mmalensek/cs326/schedule/materials/ATTArchives_UNIX_OS.mp4) of the ATT folks explaining it.
 
