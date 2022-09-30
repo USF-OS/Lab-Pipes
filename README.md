@@ -1,4 +1,23 @@
-# Pipes
+# Part 1: Signals
+
+You are given a basic signal handling program. Extend it to:
+* Reset the counter to 0 every 15 seconds using SIGALRM. Make sure this works every 15 seconds, not just once.
+* Add 5 to the counter when the user presses Ctrl+\ (SIGQUIT)
+* Add 10 to the counter when SIGUSR1 is received
+* Exit gracefully (print the final count and "Goodbye!") when SIGINT is received (already provided)
+
+## Sending Signals
+
+You can send a signal to a process with the `kill` command:
+
+```bash
+kill -s SIGQUIT <pid>
+```
+
+(The program prints its PID when starting up.)
+
+
+# Part 2: Pipes
 
 One of the core types of IPC on Unix system is pipes. You will be implementing pipe redirection in your shell, and of course there's that [awesome video](https://www.cs.usfca.edu/~mmalensek/cs326/schedule/materials/ATTArchives_UNIX_OS.mp4) of the ATT folks explaining it.
 
